@@ -1,0 +1,4 @@
+コミット後に実行
+cd echo-me/
+npm run build
+npm run deploy
