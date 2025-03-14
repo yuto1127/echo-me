@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState, useMemo } from 'react';
 
-const Base = () => {
+const App = () => {
     const [count, setCount] = useState(0);
     
     return (
@@ -15,4 +15,4 @@ const Base = () => {
     );
 };
 
-export default Base;
+export default App;
