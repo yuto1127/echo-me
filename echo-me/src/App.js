@@ -1,16 +1,40 @@
 'use client';
 
-import React, { useEffect, useState, useMemo } from 'react';
+import React from 'react';
+import './App.css';
 
 const App = () => {
-    const [count, setCount] = useState(0);
-    
     return (
-        <div>
-            <h2>count: {count}</h2>
-            <button onClick={() => setCount(count + 1)}>
-                クリック
-            </button>
+        <div className="profile-container">
+            <header className="profile-header">
+                <h1>自己紹介</h1>
+            </header>
+            
+            <main className="profile-content">
+                <section className="profile-section">
+                    <h2>基本情報</h2>
+                    <div className="profile-info">
+                        <p><strong>名前：</strong>山田太郎</p>
+                        <p><strong>年齢：</strong>25歳</p>
+                        <p><strong>職業：</strong>ソフトウェアエンジニア</p>
+                    </div>
+                </section>
+
+                <section className="profile-section">
+                    <h2>スキル</h2>
+                    <ul className="skills-list">
+                        <li>JavaScript / TypeScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>HTML / CSS</li>
+                    </ul>
+                </section>
+
+                <section className="profile-section">
+                    <h2>趣味</h2>
+                    <p>プログラミング、読書、旅行</p>
+                </section>
+            </main>
         </div>
     );
 };
